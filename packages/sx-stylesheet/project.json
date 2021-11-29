@@ -1,0 +1,33 @@
+{
+  "root": "packages/sx-stylesheet",
+  "sourceRoot": "packages/sx-stylesheet/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/workspace:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/sx-stylesheet",
+        "main": "packages/sx-stylesheet/src/index.ts",
+        "tsConfig": "packages/sx-stylesheet/tsconfig.lib.json",
+        "assets": ["packages/sx-stylesheet/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/sx-stylesheet/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/sx-stylesheet"],
+      "options": {
+        "jestConfig": "packages/sx-stylesheet/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
