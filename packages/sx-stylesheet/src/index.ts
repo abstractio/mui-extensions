@@ -1,1 +1,1 @@
-export * from './lib/sx-stylesheet';
+export * from './lib/stylesheet';
