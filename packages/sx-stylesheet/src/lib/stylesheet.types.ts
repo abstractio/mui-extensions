@@ -17,7 +17,7 @@ type DeepPartial<T> = {
   [P in keyof T]?: DeepPartial<T[P]>;
 };
 
-// I would rather not use this since it absolutely tanks vscode typescript's server perfomance
+// I would rather not use this since it absolutely tanks vscode typescript language server perfomance
 export type StylesheetDeepTree<
   T extends
     | typeof Stylesheet['create']

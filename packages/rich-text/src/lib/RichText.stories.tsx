@@ -1,12 +1,12 @@
 import { Story, Meta } from '@storybook/react';
-import { QuillEditor } from './RichText';
-
+import { RichText } from './RichText';
+import type { RichTextProps } from './RichText';
 export default {
-  component: QuillEditor,
+  component: RichText,
   title: 'QuillEditor',
 } as Meta;
 
-const Template: Story = (args) => <QuillEditor {...args} />;
+const Template: Story<RichTextProps> = (args) => <RichText {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {};

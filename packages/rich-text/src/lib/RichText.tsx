@@ -3,7 +3,7 @@ import { formats, redoChange, undoChange, EditorToolbar } from './EditorBar';
 import { Stylesheet } from '@mirowsky/sx-stylesheet';
 import { Box } from '@mui/material';
 
-export default function QuillEditor({
+export function RichText({
   id,
   error,
   value,
@@ -11,7 +11,7 @@ export default function QuillEditor({
   simple = false,
   sx,
   ...other
-}: QuillEditorProps) {
+}: RichTextProps) {
   const modules = {
     toolbar: {
       container: `#${id}`,
@@ -46,7 +46,7 @@ export default function QuillEditor({
   );
 }
 
-interface QuillEditorProps {
+export interface RichTextProps {
   id: string;
   value: string;
   onChange: (...args: unknown[]) => void;
