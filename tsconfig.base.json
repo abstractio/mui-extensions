@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@mirowsky/rich-text": ["packages/rich-text/src/index.ts"],
       "@mirowsky/sx-stylesheet": ["packages/sx-stylesheet/src/index.ts"]
     }
   },
