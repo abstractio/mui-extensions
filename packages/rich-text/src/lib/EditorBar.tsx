@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Stylesheet } from '@mirowsky/sx-stylesheet';
 import { Quill } from 'react-quill';
 import { Icon } from '@iconify/react';

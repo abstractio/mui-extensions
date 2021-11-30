@@ -1,0 +1,28 @@
+{
+  "root": "packages/rich-text-e2e",
+  "sourceRoot": "packages/rich-text-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "packages/rich-text-e2e/cypress.json",
+        "devServerTarget": "rich-text:storybook"
+      },
+      "configurations": {
+        "ci": {
+          "devServerTarget": "rich-text:storybook:ci"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/rich-text-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["rich-text"]
+}

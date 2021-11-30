@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "rich-text": "packages/rich-text",
+    "rich-text-e2e": "packages/rich-text-e2e",
     "sx-stylesheet": "packages/sx-stylesheet"
   }
 }
