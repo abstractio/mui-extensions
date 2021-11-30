@@ -1,5 +1,6 @@
-import { SxProps, Theme } from '@mui/system';
+import { SxProps } from '@mui/system';
 import { Stylesheet } from '..';
+import { Theme } from '@mui/material';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type StylesheetHandler = (...args: any[]) => SxProps<Theme>;
