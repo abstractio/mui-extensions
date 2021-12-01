@@ -2,6 +2,7 @@ import ReactQuill from 'react-quill';
 import { formats, redoChange, undoChange, EditorToolbar } from './EditorBar';
 import { Stylesheet } from '@mirowsky/sx-stylesheet';
 import { Box } from '@mui/material';
+import 'react-quill/dist/quill.snow.css';
 
 export function RichText({
   id,
@@ -25,7 +26,7 @@ export function RichText({
       maxStack: 100,
       userOnly: true,
     },
-    syntax: true,
+    syntax: false,
     clipboard: {
       matchVisual: false,
     },
